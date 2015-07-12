@@ -2,6 +2,8 @@
 
 Material Design Color Picker directive for AngularJS.
 
+[![Color Picker](http://i.imgur.com/k1YbW7f.png)](http://codepen.io/templarian/pen/jPyvpv)
+
 Latest codepen.io [example](http://codepen.io/templarian/pen/jPyvpv).
 
 ## Tag
