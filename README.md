@@ -6,6 +6,10 @@ Material Design Color Picker directive for AngularJS.
 
 Latest codepen.io [example](http://codepen.io/templarian/pen/jPyvpv).
 
+## Reference the `ui.bootstrap.materialPicker` module
+
+To use include the `ui.bootstrap.materialPicker.js` file and add a reference to the `ui.bootstrap.materialPicker` module.
+
 ## Tag
 
 ```html
@@ -25,5 +29,23 @@ Latest codepen.io [example](http://codepen.io/templarian/pen/jPyvpv).
 The required CSS is below.
 
 ```css
-
+.colorpicker-colors {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  border: 1px solid #FFF;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  cursor: default;
+}
+.colorpicker-colors div.selected {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 4px #000;
+  border: 2px solid #FFF;
+}
+div.colorpicker-white.selected {
+  border-color: #78909C;
+}
 ```
