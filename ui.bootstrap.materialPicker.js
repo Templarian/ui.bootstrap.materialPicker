@@ -449,7 +449,6 @@ angular.module('ui.bootstrap.materialPicker', [])
       for (var i = 0; i < 19; i++) {
         var column = angular.element('<div>');
         column.css({
-          width: size + 'px',
           display: 'inline-block',
           verticalAlign: 'top'
         });
@@ -585,6 +584,30 @@ angular.module('ui.bootstrap.materialPicker', [])
           } 
         }
       });
+      if (attrs.size) {
+        $scope.$watch(attrs.size, function (nSize) {
+          for (var i = 0; i < selection.length; i++) {
+            for (var j = 0; j < selection[i].length; j++) {
+              selection[i][j].ele.css({
+                width: nSize + 'px',
+                height: nSize + 'px'
+              });
+            }
+          }
+          white.css({
+            width: (nSize * 3) + 'px',
+            height: (nSize * 2) + 'px',
+            left: (nSize * 16) + 'px',
+            top: (nSize * 10) + 'px'
+          });
+          black.css({
+            width: (nSize * 3) + 'px',
+            height: (nSize * 2) + 'px',
+            left: (nSize * 16) + 'px',
+            top: (nSize * 12) + 'px'
+          });
+        });
+      }
     };
   }
 ]);
