@@ -628,7 +628,7 @@ angular.module('ui.bootstrap.materialPicker', [])
                         }
                     }
                     value.name = getName(value.hex || oldValue.hex);
-                    if (isHex(value.hex)) {
+                    if (isHex(value.hex || value)) {
                         ngModel.$setValidity('required', true);
                     } else {
                         ngModel.$setValidity('required', false);
