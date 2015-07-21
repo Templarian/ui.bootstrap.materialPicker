@@ -56,7 +56,7 @@ div.materialpicker-white.selected {
 
 ## Format Object
 
-```
+```javascript
 $scope.color = {
   hex: '#990000',    Hex or RGB must be populated.
   r: 153,            Red 0-255
